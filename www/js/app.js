@@ -21,5 +21,9 @@ angular.module('starter', ['ionic'])
             url:'/home',
             controller:'HomeController',
             templateUrl:'views/home.html'
+        }).state('chat',{
+            url:'/chat',
+            controller:'ChatController',
+            templateUrl:'views/chat.html'
         });
 }]);
