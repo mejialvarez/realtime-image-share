@@ -16,4 +16,10 @@ angular.module('starter', ['ionic'])
       StatusBar.styleDefault();
     }
   });
-})
+}).config(['$stateProvider',function($stateProvider){
+        $stateProvider.state('home',{
+            url:'/home',
+            controller:'HomeController',
+            templateUrl:'views/home.html'
+        });
+}]);
