@@ -3,7 +3,7 @@
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
-angular.module('starter', ['ionic'])
+angular.module('imageShare', ['ionic','com.htmlxprs.imageShare.controllers','com.htmlxprs.imageShare.services','com.htmlxprs.imageShare.directives'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -15,6 +15,7 @@ angular.module('starter', ['ionic'])
     if(window.StatusBar) {
       StatusBar.styleDefault();
     }
+    $state.go('home');
   });
 }).config(['$stateProvider',function($stateProvider){
         $stateProvider.state('home',{
