@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 angular.module('imageShare', ['ionic','com.htmlxprs.imageShare.controllers','com.htmlxprs.imageShare.services','com.htmlxprs.imageShare.directives'])
 
-.run(function($ionicPlatform) {
+.run(function($ionicPlatform,$state) {
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)

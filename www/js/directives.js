@@ -19,7 +19,7 @@ angular.module('com.htmlxprs.imageShare.directives',[]).directive('browseFile',[
 
         fileReader.onload=function(event){
           $rootScope.$broadcast('event:file:selected',{image:event.target.result,sender:USER.name})
-        }i
+        };
 
         fileReader.readAsDataURL(file);
       });
